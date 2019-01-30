@@ -1,0 +1,7 @@
+<webscript>
+        <shortname>Get FTL Root Scope Objects</shortname>
+        <description>Get Freemarker Root Scope Objects</description>
+        <url>/devcon2019/ftlroots</url>
+        <format default="text" />
+        <authentication>guest</authentication>
+</webscript>
