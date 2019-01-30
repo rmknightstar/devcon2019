@@ -28,7 +28,7 @@
          <ref bean="${artifactId}.bulkExporter"/>
       </property>
     </bean>
-      <bean id="${artifactId}.bulkExporter" class="org.alfresco.accelerator.bulkexporter.impl.BulkExporterJsonLines">
+      <bean id="${artifactId}.bulkExporter" class="org.alfresco.accelerator.bulkexporter.impl.FileFolderTreeBulkExporter">
         <property name="serviceRegistry">
             <ref bean="ServiceRegistry"/>
         </property>
@@ -36,7 +36,7 @@
             <ref bean="${artifactId}.fileFolderWalker"/>
         </property>
     </bean>
-      <bean id="${artifactId}.fileFolderWalker" class="org.alfresco.consulting.util.tree_walker.impl.FileFolderTreeWalker">
+      <bean id="${artifactId}.fileFolderWalker" class="org.alfresco.accelerator.bulkexporter.utils.impl.FileFolderTreeWalker">
         <property name="serviceRegistry">
             <ref bean="ServiceRegistry"/>
         </property>
