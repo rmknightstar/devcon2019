@@ -33,7 +33,12 @@
             <ref bean="ServiceRegistry"/>
         </property>
         <property name="fileFolderTreeWalker">
-            <ref bean="alfresco-consulting-repo-utils.fileFolderWalker"/>
+            <ref bean="${artifactId}.fileFolderWalker"/>
+        </property>
+    </bean>
+      <bean id="${artifactId}.fileFolderWalker" class="org.alfresco.consulting.util.tree_walker.impl.FileFolderTreeWalker">
+        <property name="serviceRegistry">
+            <ref bean="ServiceRegistry"/>
         </property>
     </bean>
 
